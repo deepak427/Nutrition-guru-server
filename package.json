@@ -1,0 +1,12 @@
+{
+  "name": "nutrition-guru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Team nutrition guru",
+  "license": "ISC"
+}
