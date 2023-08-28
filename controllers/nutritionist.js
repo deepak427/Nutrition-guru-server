@@ -25,7 +25,6 @@ export const nutritionist = async (req, res) => {
     <</SYS>>
     
     ${nutritionInformation}[/INST]`;
-  console.log(prompt)
 
   const stub = ClarifaiStub.grpc();
 
