@@ -7,8 +7,8 @@ const PAT = process.env.PAT;
 const USER_ID = "meta";
 const APP_ID = "Llama-2";
 
-const MODEL_ID = "llama2-70b-chat";
-const MODEL_VERSION_ID = "6c27e86364ba461d98de95cddc559cb3";
+const MODEL_ID = "llama2-13b-chat";
+const MODEL_VERSION_ID = "79a1af31aa8249a99602fc05687e8f40";
 
 export const nutritionist = async (req, res) => {
   const { nutritionInformation } = req.body;
@@ -25,6 +25,7 @@ export const nutritionist = async (req, res) => {
     <</SYS>>
     
     ${nutritionInformation}[/INST]`;
+  console.log(prompt)
 
   const stub = ClarifaiStub.grpc();
 
